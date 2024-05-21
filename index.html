@@ -6,6 +6,7 @@
     <title>Login</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <main>
@@ -17,8 +18,23 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para poder acessar sua conta e poder fazer as configurações no seu ambiente</p>
 
-                <form action="login.js" method="post">
-                    
+                <form action="login.js" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            alternate_email
+                        </span>
+                        <input type="email" name="login" id="login-id" autocomplete="email" placeholder="Seu e-mail" required maxlength="30">
+                        <label for="login-id">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">
+                            key
+                        </span>
+                        <input type="password" name="senha" id="senha-id" autocomplete="current-password" placeholder="Sua senha" required minlength="8" maxlength="20">
+                        <label for="senha-id">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <input type="button" value="Esqueci a senha">
                 </form>
             </div>
         </section>
