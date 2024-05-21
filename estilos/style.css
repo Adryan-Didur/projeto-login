@@ -52,3 +52,31 @@ section#login > div#formulario > h1{
 section#login > div#formulario > p{
     text-align: center;
 }
+form > div.campo{
+    background-color: var(--lilás);
+    width: 100%;
+    display: block;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0px;
+}
+form label{
+    display: none;
+}
+form > input[type=submit], form > input[type=button]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--verde);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+form > input[type=submit]:hover, form > input[type=button]:hover{
+    border: 1px solid white;
+    background-color: #3b8a87;
+    transition-duration: 0.01s;
+}
